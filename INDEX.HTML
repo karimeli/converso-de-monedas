@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Monedas</h1>
+        <label for="origen">De:</label>
+        <select id="origen">
+            <option value="USD">USD - Dólar estadounidense</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - Libra esterlina</option>
+            <option value="MXN">MXN - Peso mexicano</option>
+            <option value="JPY">JPY - Yen japonés</option>
+            <option value="CAD">CAD - Dólar canadiense</option>
+            <option value="AUD">AUD - Dólar australiano</option>
+            <option value="CHF">CHF - Franco suizo</option>
+            <option value="CNY">CNY - Yuan chino</option>
+            <option value="INR">INR - Rupia india</option>
+            <option value="BRL">BRL - Real brasileño</option>
+            <option value="CLP">CLP - Peso chileno</option>
+            <option value="COP">COP - Peso colombiano</option>
+            <option value="PEN">PEN - Sol peruano</option>
+            <option value="VES">VES - Bolívar soberano venezolano</option>
+            <option value="RUB">RUB - Rublo ruso</option>
+            <option value="TRY">TRY - Lira turca</option>
+            <option value="ZAR">ZAR - Rand sudafricano</option>
+            <option value="SEK">SEK - Corona sueca</option>
+            <option value="NOK">NOK - Corona noruega</option>
+            <option value="DKK">DKK - Corona danesa</option>
+            <option value="NZD">NZD - Dólar neozelandés</option>
+            <option value="SGD">SGD - Dólar singapurense</option>
+            <option value="HKD">HKD - Dólar hongkonés</option>
+            <option value="KRW">KRW - Won surcoreano</option>
+            <option value="THB">THB - Baht tailandés</option>
+            <option value="MYR">MYR - Ringgit malayo</option>
+            <option value="IDR">IDR - Rupia indonesia</option>
+            <option value="PHP">PHP - Peso filipino</option>
+            <option value="SAR">SAR - Riyal saudí</option>
+            <option value="AED">AED - Dirham de los Emiratos Árabes Unidos</option>
+            <option value="QAR">QAR - Riyal catarí</option>
+            <option value="KWD">KWD - Dinar kuwaití</option>
+            <option value="EGP">EGP - Libra egipcia</option>
+            <option value="NGN">NGN - Naira nigeriana</option>
+            <option value="PLN">PLN - Złoty polaco</option>
+            <option value="CZK">CZK - Corona checa</option>
+            <option value="HUF">HUF - Forinto húngaro</option>
+            <option value="ILS">ILS - Nuevo shéquel israelí</option>
+            <option value="PKR">PKR - Rupia pakistaní</option>
+            <option value="BDT">BDT - Taka bangladesí</option>
+            <option value="LKR">LKR - Rupia de Sri Lanka</option>
+            <option value="VND">VND - Dong vietnamita</option>
+            <option value="KZT">KZT - Tenge kazajo</option>
+            <option value="UAH">UAH - Grivna ucraniana</option>
+            <option value="BYN">BYN - Rublo bielorruso</option>
+            <option value="RSD">RSD - Dinar serbio</option>
+            <option value="HRK">HRK - Kuna croata</option>
+            <option value="RON">RON - Leu rumano</option>
+            <option value="BGN">BGN - Lev búlgaro</option>
+        </select>
+        
+        <label for="destino">A:</label>
+        <select id="destino">
+            <option value="USD">USD - Dólar estadounidense</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - Libra esterlina</option>
+            <option value="MXN">MXN - Peso mexicano</option>
+            <option value="JPY">JPY - Yen japonés</option>
+            <option value="CAD">CAD - Dólar canadiense</option>
+            <option value="AUD">AUD - Dólar australiano</option>
+            <option value="CHF">CHF - Franco suizo</option>
+            <option value="CNY">CNY - Yuan chino</option>
+            <option value="INR">INR - Rupia india</option>
+            <option value="BRL">BRL - Real brasileño</option>
+            <option value="CLP">CLP - Peso chileno</option>
+            <option value="COP">COP - Peso colombiano</option>
+            <option value="PEN">PEN - Sol peruano</option>
+            <option value="VES">VES - Bolívar soberano venezolano</option>
+            <option value="RUB">RUB - Rublo ruso</option>
+            <option value="TRY">TRY - Lira turca</option>
+            <option value="ZAR">ZAR - Rand sudafricano</option>
+            <option value="SEK">SEK - Corona sueca</option>
+            <option value="NOK">NOK - Corona noruega</option>
+            <option value="DKK">DKK - Corona danesa</option>
+            <option value="NZD">NZD - Dólar neozelandés</option>
+            <option value="SGD">SGD - Dólar singapurense</option>
+            <option value="HKD">HKD - Dólar hongkonés</option>
+            <option value="KRW">KRW - Won surcoreano</option>
+            <option value="THB">THB - Baht tailandés</option>
+            <option value="MYR">MYR - Ringgit malayo</option>
+            <option value="IDR">IDR - Rupia indonesia</option>
+            <option value="PHP">PHP - Peso filipino</option>
+            <option value="SAR">SAR - Riyal saudí</option>
+            <option value="AED">AED - Dirham de los Emiratos Árabes Unidos</option>
+            <option value="QAR">QAR - Riyal catarí</option>
+            <option value="KWD">KWD - Dinar kuwaití</option>
+            <option value="EGP">EGP - Libra egipcia</option>
+            <option value="NGN">NGN - Naira nigeriana</option>
+            <option value="PLN">PLN - Złoty polaco</option>
+            <option value="CZK">CZK - Corona checa</option>
+            <option value="HUF">HUF - Forinto húngaro</option>
+            <option value="ILS">ILS - Nuevo shéquel israelí</option>
+            <option value="PKR">PKR - Rupia pakistaní</option>
+            <option value="BDT">BDT - Taka bangladesí</option>
+            <option value="LKR">LKR - Rupia de Sri Lanka</option>
+            <option value="VND">VND - Dong vietnamita</option>
+            <option value="KZT">KZT - Tenge kazajo</option>
+            <option value="UAH">UAH - Grivna ucraniana</option>
+            <option value="BYN">BYN - Rublo bielorruso</option>
+            <option value="RSD">RSD - Dinar serbio</option>
+            <option value="HRK">HRK - Kuna croata</option>
+            <option value="RON">RON - Leu rumano</option>
+            <option value="BGN">BGN - Lev búlgaro</option>
+        </select>
+        
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" placeholder="Ingrese cantidad">
+        
+        <button onclick="convertir()">Convertir</button>
+        
+        <!-- Nuevo elemento para mostrar el resultado con formato mejorado -->
+        <div id="resultado" class="resultado"></div>
+    </div>
+    
+    <script>
+        // Mapeo de símbolos de monedas
+        const simbolosMonedas = {
+            'USD': '$', 'EUR': '€', 'GBP': '£', 'MXN': '$', 'JPY': '¥', 'CAD': '$', 'AUD': '$', 'CHF': 'CHF', 
+            'CNY': '¥', 'INR': '₹', 'BRL': 'R$', 'CLP': '$', 'COP': '$', 'PEN': 'S/', 'VES': 'Bs', 'RUB': '₽', 
+            'TRY': '₺', 'ZAR': 'R', 'SEK': 'kr', 'NOK': 'kr', 'DKK': 'kr', 'NZD': '$', 'SGD': '$', 'HKD': '$', 
+            'KRW': '₩', 'THB': '฿', 'MYR': 'RM', 'IDR': 'Rp', 'PHP': '₱', 'SAR': '﷼', 'AED': 'د.إ', 'QAR': '﷼', 
+            'KWD': 'د.ك', 'EGP': '£', 'NGN': '₦', 'PLN': 'zł', 'CZK': 'Kč', 'HUF': 'Ft', 'ILS': '₪', 'PKR': '₨', 
+            'BDT': '৳', 'LKR': 'Rs', 'VND': '₫', 'KZT': '₸', 'UAH': '₴', 'BYN': 'Br', 'RSD': 'дин', 'HRK': 'kn', 
+            'RON': 'lei', 'BGN': 'лв'
+        };
+
+        function convertir() {
+            const origen = document.getElementById('origen').value;
+            const destino = document.getElementById('destino').value;
+            const cantidad = document.getElementById('cantidad').value;
+            
+            fetch(`http://localhost:3000/api/convertir/${origen}/${destino}/${cantidad}`)
+                .then(response => response.json())
+                .then(data => {
+                    const simboloOrigen = simbolosMonedas[origen] || '';
+                    const simboloDestino = simbolosMonedas[destino] || '';
+                    const resultadoFormateado = parseFloat(data.resultado).toFixed(2);
+                    document.getElementById('resultado').innerHTML = `
+                        <p><strong>${simboloOrigen}${cantidad} ${origen}</strong> equivale a:</p>
+                        <p><strong>${simboloDestino}${resultadoFormateado} ${destino}</strong></p>
+                    `;
+                })
+                .catch(error => {
+                    document.getElementById('resultado').textContent = 'Error en la conversión';
+                });
+        }
+    </script>
+</body>
+</html>
